@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -101,9 +100,8 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
-          </div>
-        </div>
-        {/* Mobile Toggle and ThemeToggle */}
+
+            {/* Mobile Toggle and ThemeToggle */}
             <div className="md:hidden flex items-center">
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -137,6 +135,7 @@ export default function Navbar() {
               </button>
             </div>
           </div>
+        </div>
 
         {isOpen && (
           <div className="md:hidden bg-white dark:bg-gray-900 transition-colors duration-300 shadow-lg">
