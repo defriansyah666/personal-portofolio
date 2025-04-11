@@ -11,6 +11,9 @@ const poppins = Poppins({
 export const metadata = {
   title: "My Professional Portfolio",
   description: "Showcasing my skills, projects, and experience",
+  icons: {
+    icon: '/favicon.ico', // arahkan ke file favicon di public
+  },
 };
 
 export default function RootLayout({
